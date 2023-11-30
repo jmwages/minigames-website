@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pictionary</title>
+    <link rel="icon" type="image/icon" href="images/cow-solid.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4c41eeb76.js" crossorigin="anonymous"></script>
+
+    <script src="javascript/pictionary-menu.js"></script>
+</head>
+
+<body class="bg-info" style="font-family: Futura; font-size: 20px;">
+
+    <nav class="navbar sticky-top bg-primary m-1 shadow" style="border-radius: 10px;">
+        <div class="container-fluid">
+            <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars" style="font-size: 60px;"></span>
+            </button>
+            <div style="font-size: 50px; font-variant: small-caps;">Pictionary&nbsp;<span
+                    class="navbar-brand fa fa-cow" style="font-size: 50px;"></span></div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav m-4 mt-0 ">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link" href="sign-in.html">Sign In</a>
+                <a class="nav-link" href="game-menu.html">Games</a>
+                <a class="nav-link" href="history.html">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row mt-4">
+        <div class="col-4 bg-dark m-5 mt-0 text-light text-center shadow" style="border-radius: 10px; height: 600px;">
+            <div class="pt-3">
+                Your Best Time:
+            </div>
+            <div id="high-score">
+                ---
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-7 bg-light text-center shadow" style="border-radius: 10px; height: 600px;">
+            <form action="game-menu.html" id="menu-form">
+                <div class="d-flex flex-column align-items-center mt-5 pt-5">
+                    <div class="form-check mt-5">
+                        <input type="radio" class="btn-check" name="options" id="guess">
+                        <label class="btn btn-primary m-4" for="guess"
+                            style="width: 100px; height: 80px; padding-top: 25px;">Guess</label>
+                        <input type="radio" class="btn-check" name="options" id="draw">
+                        <label class="btn btn-primary m-4" for="draw"
+                            style="width: 100px; height: 80px; padding-top: 25px;">Draw</label>
+                    </div>
+                    <input type="text" class="form-control mb-3" id="opponent" placeholder="Opponent Name Here" style="width: 200px;"> 
+                    <button type="submit" class="btn btn-success mt-3" style="width: 200px; height: 100px;">Go</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+<footer class=" text-center text-lg-start text-white mt-4">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Jean-Marc Wages - 2023
+      </div>
+</footer>
+
+</html>

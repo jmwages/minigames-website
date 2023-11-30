@@ -1,0 +1,39 @@
+#boardDiv {
+   font-family: Futura, Helvetica, sans-serif;
+   text-align: center;
+   
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+}
+
+#gameBoard {
+   font: 85px arial, sans-serif;
+   margin: auto;
+   width: 320px;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px;
+   grid-gap: 10px;
+}
+
+#gameBoard > button {
+   background-color: whitesmoke;
+   border: 1px solid LightSkyBlue;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 100%;
+   font-family: inherit;
+   box-shadow: 0px 0px 10px gray;
+}
+
+#gameBoard > button:hover {
+   box-shadow: 0px 0px 10px rgb(61, 61, 61);
+}
